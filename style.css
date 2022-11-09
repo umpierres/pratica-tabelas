@@ -1,0 +1,17 @@
+header {
+    text-align: center;
+}
+
+.icon-top {
+    width: 50%;
+}
+
+.icon {
+    width: 30px;
+}
+
+th, td ,table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding:15px;
+}

@@ -1,15 +1,128 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Pratica Tabelas</title>
+
+		<style>
+			table{
+				width: 100%;
+				border: 1px solid black ;
+				border-collapse: collapse;
+			}
+			td ,th{
+				border: 1px solid black;
+				padding: 10px;
+			}
+
+			.coluna-dias{
+				width: 200px;
+				text-align: center;
+				font-family: sans-serif;
+			}
+			.horarios{
+				width: 200px;
+				text-align: center;
+				font-size: large;
+			}
+			.cronograma{
+				text-align: center;
+			}
+
+			body{
+				margin: 0%;
+				padding: 0%;
+			}
+		</style>
+
+
 	</head>
+	<header style="text-align: center;">
+		<h1>Plano de Estudo</h1>
+		<img src="./images/image-bonita.png" alt="Imagem cronograma" width="300px">
+	</header>
 	<body>
 		<main>
-			<table></table>
+			<table >
+				<tbody>
+	
+					<tr class="coluna-dias">
+					<th><img src="./images/horario.png" alt="imagem relogio" width="50px"></th>
+					<th>Segunda</th>
+					<th>Terça</th>
+					<th>Quarta</th>
+					<th>Quinta</th>
+					<th>Sexta</th>
+					<th>Sábado</th>
+					<th>Domingo</th>
+					</tr>
+
+					<tr class="cronograma">
+						<td class="horarios" >08:00-12:00</td>
+						<td >Trabalho</td>
+						<td>Trabalho</td>
+						<td>Trabalho</td>
+						<td>Trabalho</td>
+						<td>Trabalho</td>
+						<td>Trabalho</td>
+						<td>Descansar</td>
+					</tr>
+					<tr style="text-align: center;">
+						<td class="horarios">12:00-13:00 </td >
+						<td colspan=7>Almoçar</td>
+						
+					</tr>
+					<tr class="cronograma"> 
+						<td class="horarios">13:00-15:00</td>
+						<td>Aula-Growdev</td>
+						<td>Aula-Growdev</td>
+						<td>Aula-Growdev</td>
+						<td>Aula-Growdev</td>
+						<td>Aula-Growdev</td>
+						<td>Revisar-Conteudo da Semana</td>
+						<td rowspan="3">Descansar</td>
+					</tr>
+					<tr class="cronograma">
+						<td class="horarios">15:00-18:00</td>
+						<td>Aula-Growdev</td>
+						<td>Aula-Growdev</td>
+						<td>Aula-Growdev</td>
+						<td>Aula-Growdev</td>
+						<td>Aula-Growdev</td>
+						<td>Descansar</td>
+						
+					</tr >
+					<tr class="cronograma">
+						<td class="horarios">19:00-22:30</td>
+						<td>Ensaio Ministerio de Musica</td>
+						<td>Estudar</td>
+						<td>Grupo de oração</td>
+						<td>Estudar</td>
+						<td>Formação-Comunidade</td>
+						<td>Grupo de Oração</td>
+						
+					</tr>
+					<tr class="cronograma">
+						<td class="horarios">22:30-08:00</td>
+						<td colspan="7">Dormir</td>
+						
+					</tr>
+
+
+				</tbody>
+				<tr style="text-align:center ;">
+					<td colspan="8">
+				
+					<img src="./images/growdev.png" alt="Logo growdev">
+				
+			    	</td>
+				</tr>
+
+			</table>
 		</main>
 	</body>
+	<footer style="text-align: center;"> <small> Atividade prática - Tabela Cronograma de Estudos - ©Growdev 2022</small></footer>
 </html>
 

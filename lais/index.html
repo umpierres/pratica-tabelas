@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Pratica Tabelas</title>
+
+        <style>
+            table{
+                text-align: center;
+                border: 1px solid black ;
+                border-collapse: collapse;
+                width:100% ;
+            }
+            th, td {
+                border: 1px solid black;
+                padding: 15px;
+            }
+            tr:nth-child(even){
+                background-color: rgba(78, 81, 235, 0.41);
+            }
+            tr:nth-child(odd){
+                background-color: rgba(175, 174, 174, 0.259);
+            }
+        </style>
+	</head>
+    <main>
+	<body>
+		<header style="text-align:center;">
+            <h1>Plano de Estudos</h1>
+            <img src="./images/image-bonita.png" alt="calendário" width="300px">
+		</header>	
+            <table style="margin:auto;">
+                <thead style="background-color:rgba(80, 82, 214, 0.69) ;">
+                    <tr>
+                        <th><img src="./images/horario.png" alt="horário" width="50px"></th>
+                        <th>SEGUNDA</th>
+                        <th>TERÇA</th>
+                        <th>QUARTA</th>
+                        <th>QUINTA</th>
+                        <th>SEXTA</th>
+                        <th>SÁBADO</th>
+                        <th>DOMINGO</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><b>8:00 - 12:00</b></td>
+                        <td> Revisar conteúdo </td>
+                        <td>Estudar aula anterior</td>
+                        <td>Estudar aula anterior</td>
+                        <td>Estudar aula anterior</td>
+                        <td>Estudar aula anterior</td>
+                        <td>Fazer Atividades</td>
+                        <td>Descansar</td>
+                    </tr>
+                    <tr>
+                        <td><b>12:00 - 13:00</b></td>
+                        <td colspan="7" style="text-align:center ;" >Almoço</td>
+                        
+                    </tr>
+                    <tr>
+                        <td><b>13:00 - 15:00</b></td>
+                        <td>Preparação e Aula</td>
+                        <td>Preparação e Aula</td>
+                        <td>Preparação e Aula</td>
+                        <td>Preparação e Aula</td>
+                        <td>Preparação e Aula</td>
+                        <td>Livre</td>
+                        <td rowspan="3">Descansar</td>
+                    </tr>
+                    <tr>
+                        <td><b>15:00 - 18:00</b></td>
+                        <td>Aula</td>
+                        <td>Aula</td>
+                        <td>Aula</td>
+                        <td>Aula</td>
+                        <td>Aula</td>
+                        <td>Livre</td>
+                    </tr>
+                    <tr>
+                        <td><b>18:00 - 22:30</b></td>
+                        <td>Fazer Atividade</td>
+                        <td>Fazer Atividade</td>
+                        <td>Fazer Atividade</td>
+                        <td>Fazer Atividade</td>
+                        <td>Fazer Atividade</td>
+                        <td>Livre</td>
+                    </tr>
+                    <tr>
+                        <td><b>22:30 - 08:00</b></td>
+                        <td colspan="8" style="text-align:center;">Dormir</td>
+                    </tr>
+                </tbody>
+                
+                <tfoot>
+                    <tr>
+                    <td colspan="8" style="text-align:center;"><img src="./images/growdev.png" alt="logo Growdev"></td>
+                    </tr>
+                </tfoot>
+                </table>
+		</main>
+	</body>
+    <footer style="text-align:center;">
+        <small>Atividade prática - Tabela Cronograma de Estudos - ©Growdev 2022</small>
+    </footer>
+</html>

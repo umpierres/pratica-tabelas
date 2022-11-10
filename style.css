@@ -13,6 +13,7 @@ header, footer, .footer-image{
 
 .icon {
     width: 40px;
+    z-index: 3;
 }
 
 th, td ,table {
